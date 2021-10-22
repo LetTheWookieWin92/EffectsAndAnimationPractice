@@ -10,6 +10,8 @@
         .puppy-img {
           width: 200px;
           height: 200px;
+          animation-name: appear;
+          animation-duration: 3s;
           
         }
 
@@ -31,6 +33,21 @@
 
         .puppy-link:hover {
             text-decoration: none;
+        }
+
+        @keyframes appear {
+            0% {
+                width: 100px;
+                height: 100px;
+            }
+            50% {
+                width: 300px;
+                height: 300px;
+            }
+            100% {
+                width: 200px;
+                height: 200px;
+            }
         }
 
     </style>
